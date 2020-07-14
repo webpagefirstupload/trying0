@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie&display=swap');
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  
+
+}
+
+:root{
+    --cookie:'Cookie', cursive;
+    --mpink: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+    --mainPink: #ef7998;
+    --mainblue: #859af5;
+
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
+/*----------global clacces-----------*/
+a{
+    text-decoration: none;
+    color: var(--mainPink);
+
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+ul{
+    list-style-type: none;
+}
+/*----------globalclasses-----------*/
+
+/*----------navbar-----------*/
+.nav{
+    background: rgb(255, 251, 251);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+.nav .nav-menu{
+    justify-content: space-between;
+}
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse{
+    height: 40rem;
+}
+
+.nav .nav-items{
+
+    display: flex;
+    margin: 0;
+}
+.nav .nav-items .na-link{
+    padding: 1.6rem 1rem;
+    font-size: 2rem;
+    position: relative;
+    font-family: var(--cookie);
+}
+.nav .nav-items .home a{
+    padding: 1.6rem 1rem;
+    font-size: 2rem;
+    position: relative;
+    font-family: var(--cookie);
+    color: var(--mainBlack);
+}
+.nav .nav-items .na-link a:hover{
+    color:var(--mainBlack) ;
+}
+.nav .social{
+    padding: 2rem 0;
+    
+}
+.nav .social i{
+    padding: 0 .2rem;
+    color: var(--mainBlack);
+}
+.nav .social i:hover{
+color: #a1c4cf;}
+.nav .nav-brand a{
+    padding: 1rem 0;
+    display: block;
+
+}
+
+/*------------------main content-------------------*/
+
+/*------------site title-------------*/
+main .site-title{
+    background: url('../img/bg.jpeg');
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content:center;
+}
+
+main .site-title .site-background{
+    padding-top: 10rem ;
+    padding-right: 20rem;
+    text-align: center;
+    
+}
+
+main .site-title span{
+    margin: 0.3rem;
+    color: var(--mainPink);
+    font-family: var(--cookie);
+    font-size: 6rem;
+}
+main .site-title h2{
+    margin: 0.3rem;
+    color: var(--mainBlack);
+    font-family: var(--cookie);
+    font-size: 4.5rem;
+}
+main .site-title .btn{
+    margin: 1.8rem;
+    background: none;
+    color:var(--mainBlack);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    border: 2 solid black;
+    padding: 10px;
+    font-family: var(--cookie);
+    border-radius: 15px;
+}
+.btn:hover{
+    
+    background: none;
+    box-shadow: 0 0 10px var(--mainPink), 0 0 40px var(--mainPink), 0 0 80px var(--mainPink);
+    transition-delay: 1s;
+    color: #000;
+    border: none;
+}
+
+/*-------x-----site title-------x------*/
+/* about */
+.about{
+    background: var(--mainWhite);
+    background-size: cover;
+  height: auto;
+    
+}
+
+.about-img__container {
+  position: relative;
+  margin-right: 5rem;
+  margin-top: 5rem;
+  
+
+  
+}
+
+
+.about .flex-row .col-10 span{
+  margin-top: 5rem;
+  color: var(--mainPink);
+  font-family: var(--cookie);
+  font-size: 6rem;
+  margin-bottom: 0rem;
+
+
+}
+.about .flex-row .col-10 h1{
+  margin-top: 5rem;
+  color: var(--mainBlack);
+  font-family: var(--cookie);
+  font-size: 4.5rem;
+  margin-left: 0rem;
+  margin-bottom: 0rem;
+ text-decoration-line: underline;
+}
+.about .flex-row .col-10 p{
+  color: var(--mainGr);
+  font-family: var(--cookie);
+  font-size: 2rem;
+  margin-left: 5rem;
+  margin-top: 0rem;
+  margin-right: 20rem;
+
+}
+.about .flex-row .col-10 a{
+    color: var(--mainblue);
+    margin-left: 5rem;
+    font-size: 20px;
+
+
+}
+.about .flex-row .col-10 a:hover{
+    color: var(--mainBlack);
+    text-decoration: underline;
+
+}
+.about .flex-row .about-img__container img{
+    margin-top: 9rem;
+}
+
+
+/*---------x---------main content---------x----------*/
+/*------------------footer -------------------*/
+footer{
+	bottom: 0;
+}
+.footer-distributed{
+    background-image: url('../img/old-spoon.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 1);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+	margin-top: 0px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+	width: 40%;
+}
+ 
+.footer-distributed h3{
+	color:  var(--mainWhite);
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color: var(--mainPink);
+}
+ 
+ 
+.footer-distributed .footer-links{
+	color:  var(--mainWhite);
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+ 
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color: var(--mainBlack);
+	color:  var(--mainWhite);
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color:  var(--mainWhite);
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  var(--mainPink);
+	text-decoration: none;;
+}
+ 
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  var(--mainBlack);
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:   var(--mainWhite);
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  var(--mainBlack);
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ 
+ 
+@media (max-width: 916px) {
+ 
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	
+	}
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.main {
+		line-height: normal;
+		font-size: auto;
+	}
+ 
+}
+/*---------x---------footer ---------x----------*/
+
+/*                viewport less then or equal to 750px    */
+@media only screen and (max-width:916px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+    .site-background{
+       
+        padding-top: 5rem;
+padding-right: 20rem;
+text-align: center;
+background-size: cover;
+height: 100%;
+
+    }
+    .site-background h2{
+        font-size: 3.5rem;
+    }
+    .site-background span{
+        font-size: 3.5rem;
+    }
+    .site-background a{
+        font-size: 19px;
+    }
+
+}
+
+
+/*                viewport less then or equal to 750px    */
